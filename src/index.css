@@ -1,0 +1,151 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  background-color: #0a192f;
+  min-height: 100vh;
+  width: 100vw;
+  color: white;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #575e80;
+  border-radius: 4px;
+}
+
+
+i, a {
+  transition: all 0.3s ease;
+}
+#root {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.div-back {
+  background: #112240;
+}
+
+.accent {
+  color: #64ffda;
+}
+.accent-border {
+  border-color: #64ffda;
+}
+.slate {
+  color: #ccd6f6;
+}
+.slate-alt {
+  color: #8892b0;
+}
+.dark-slate {
+  color: #a8b2d1;
+}
+.hover-accent:hover {
+  color: #64ffda;
+  opacity: 100%;
+}
+.p-img {
+  filter: blur(4px) brightness(50%);
+}
+.hover-btn:hover {
+  background: rgba(100,255,218,0.1);
+}
+.hover-displace:hover {
+  translate: 0 -4px;
+}
+.translate-8:hover {
+  translate: 0 -8px;
+}
+.after-line:after {
+  content: " ";
+  margin-top: auto;
+  width: 1px;
+  height: 100px;
+  display: inline-block;
+  background: #ccd6f6;
+}
+.header-line:after {
+  content: " ";
+  max-width: 300px;
+  width: 100%;
+  height: 1px;
+  background: #233554;
+  display: inline-block;
+  margin: 0 20px;
+}
+.vertical-text {
+  writing-mode: vertical-lr;
+}
+
+.items-end {
+  align-items: end;
+}
+.items-start {
+  align-items: start;
+}
+.bullet-list li {
+  padding-left: 20px;
+  position: relative;
+  display: flex;
+  align-items: start;
+}
+.bullet-list > li:before {
+  content: "▹";
+  position: absolute;
+  left: 0;
+  color: #64ffda;
+}
+.work-list li {
+  white-space: nowrap;
+  border-color: #233554;
+}
+.work-list::-webkit-scrollbar {
+  height: 4px;
+}
+.work-list li:hover, .cert-list li:hover {
+  color: #64ffda;
+  background: #112240;
+}
+.cert-list li > a {
+  display: flex;
+  align-items: center;
+}
+.active-item {
+  color: #64ffda;
+  background: #112240;
+  border-color: #64ffda!important;
+}
+p > a {
+  color: #64ffda;
+}
+.ghost-white {
+  color: ghostwhite;
+}
+p, ul {
+  font-family: Inter, sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: Poppins, sans-serif;
+}
+.text-right {
+  text-align: right;
+}
+.text-left {
+  text-align: left;
+}
